@@ -16,6 +16,7 @@ public class TicTacToeCoding : MonoBehaviour
     Boolean btn7Checked = false;
     Boolean btn8Checked = false;
     Boolean btn9Checked = false;
+    Boolean endGame = false;
     int plusOne;
 
     public Text btnText1 = null;
@@ -38,7 +39,7 @@ public class TicTacToeCoding : MonoBehaviour
     public void score()
     {
         // PLAYER X 
-        if (btnText1.text == "X" && btnText2.text == "X" && btnText3.text == "X")
+        if (btnText1.text == "X" && btnText2.text == "X" && btnText3.text == "X" && endGame == false)
         {
             btnText1.color = Color.red;
             btnText2.color = Color.red;
@@ -46,9 +47,10 @@ public class TicTacToeCoding : MonoBehaviour
             feedback.text = "Player X won!";
             plusOne = int.Parse(txtX.text);
             txtX.text = Convert.ToString(plusOne + 1);
+            endGame = true;
         }
         else
-        if (btnText1.text == "X" && btnText4.text == "X" && btnText7.text == "X")
+        if (btnText1.text == "X" && btnText4.text == "X" && btnText7.text == "X" && endGame == false)
         {
             btnText1.color = Color.red;
             btnText4.color = Color.red;
@@ -56,9 +58,10 @@ public class TicTacToeCoding : MonoBehaviour
             feedback.text = "Player X won!";
             plusOne = int.Parse(txtX.text);
             txtX.text = Convert.ToString(plusOne + 1);
+            endGame = true;
         }
         else
-        if (btnText1.text == "X" && btnText5.text == "X" && btnText9.text == "X")
+        if (btnText1.text == "X" && btnText5.text == "X" && btnText9.text == "X" && endGame == false)
         {
             btnText1.color = Color.red;
             btnText5.color = Color.red;
@@ -66,9 +69,10 @@ public class TicTacToeCoding : MonoBehaviour
             feedback.text = "Player X won!";
             plusOne = int.Parse(txtX.text);
             txtX.text = Convert.ToString(plusOne + 1);
+            endGame = true;
         }
         else
-        if (btnText3.text == "X" && btnText5.text == "X" && btnText7.text == "X")
+        if (btnText3.text == "X" && btnText5.text == "X" && btnText7.text == "X" && endGame == false)
         {
             btnText3.color = Color.red;
             btnText5.color = Color.red;
@@ -76,9 +80,10 @@ public class TicTacToeCoding : MonoBehaviour
             feedback.text = "Player X won!";
             plusOne = int.Parse(txtX.text);
             txtX.text = Convert.ToString(plusOne + 1);
+            endGame = true;
         }
         else
-        if (btnText2.text == "X" && btnText5.text == "X" && btnText8.text == "X")
+        if (btnText2.text == "X" && btnText5.text == "X" && btnText8.text == "X" && endGame == false)
         {
             btnText2.color = Color.red;
             btnText5.color = Color.red;
@@ -86,9 +91,10 @@ public class TicTacToeCoding : MonoBehaviour
             feedback.text = "Player X won!";
             plusOne = int.Parse(txtX.text);
             txtX.text = Convert.ToString(plusOne + 1);
+            endGame = true;
         }
         else
-        if (btnText7.text == "X" && btnText8.text == "X" && btnText9.text == "X")
+        if (btnText7.text == "X" && btnText8.text == "X" && btnText9.text == "X" && endGame == false)
         {
             btnText7.color = Color.red;
             btnText8.color = Color.red;
@@ -96,9 +102,10 @@ public class TicTacToeCoding : MonoBehaviour
             feedback.text = "Player X won!";
             plusOne = int.Parse(txtX.text);
             txtX.text = Convert.ToString(plusOne + 1);
+            endGame = true;
         }
         else
-        if (btnText3.text == "X" && btnText6.text == "X" && btnText9.text == "X")
+        if (btnText3.text == "X" && btnText6.text == "X" && btnText9.text == "X" && endGame == false)
         {
             btnText3.color = Color.red;
             btnText6.color = Color.red;
@@ -106,9 +113,10 @@ public class TicTacToeCoding : MonoBehaviour
             feedback.text = "Player X won!";
             plusOne = int.Parse(txtX.text);
             txtX.text = Convert.ToString(plusOne + 1);
+            endGame = true;
         }
         else
-        if (btnText4.text == "X" && btnText5.text == "X" && btnText6.text == "X")
+        if (btnText4.text == "X" && btnText5.text == "X" && btnText6.text == "X" && endGame == false)
         {
             btnText4.color = Color.red;
             btnText5.color = Color.red;
@@ -116,10 +124,11 @@ public class TicTacToeCoding : MonoBehaviour
             feedback.text = "Player X won!";
             plusOne = int.Parse(txtX.text);
             txtX.text = Convert.ToString(plusOne + 1);
+            endGame = true;
         }
         else
         // PLAYER O
-        if (btnText1.text == "O" && btnText2.text == "O" && btnText3.text == "O")
+        if (btnText1.text == "O" && btnText2.text == "O" && btnText3.text == "O" && endGame == false)
         {
             btnText1.color = Color.blue;
             btnText2.color = Color.blue;
@@ -127,9 +136,10 @@ public class TicTacToeCoding : MonoBehaviour
             feedback.text = "Player O won!";
             plusOne = int.Parse(txtO.text);
             txtO.text = Convert.ToString(plusOne + 1);
+            endGame = true;
         }
         else
-        if (btnText1.text == "O" && btnText4.text == "O" && btnText7.text == "O")
+        if (btnText1.text == "O" && btnText4.text == "O" && btnText7.text == "O" && endGame == false)
         {
             btnText1.color = Color.blue;
             btnText4.color = Color.blue;
@@ -137,9 +147,10 @@ public class TicTacToeCoding : MonoBehaviour
             feedback.text = "Player O won!";
             plusOne = int.Parse(txtO.text);
             txtO.text = Convert.ToString(plusOne + 1);
+            endGame = true;
         }
         else
-        if (btnText1.text == "O" && btnText5.text == "O" && btnText9.text == "O")
+        if (btnText1.text == "O" && btnText5.text == "O" && btnText9.text == "O" && endGame == false)
         {
             btnText1.color = Color.blue;
             btnText5.color = Color.blue;
@@ -147,9 +158,10 @@ public class TicTacToeCoding : MonoBehaviour
             feedback.text = "Player O won!";
             plusOne = int.Parse(txtO.text);
             txtO.text = Convert.ToString(plusOne + 1);
+            endGame = true;
         }
         else
-        if (btnText3.text == "O" && btnText5.text == "O" && btnText7.text == "O")
+        if (btnText3.text == "O" && btnText5.text == "O" && btnText7.text == "O" && endGame == false)
         {
             btnText3.color = Color.blue;
             btnText5.color = Color.blue;
@@ -157,9 +169,10 @@ public class TicTacToeCoding : MonoBehaviour
             feedback.text = "Player O won!";
             plusOne = int.Parse(txtO.text);
             txtO.text = Convert.ToString(plusOne + 1);
+            endGame = true;
         }
         else
-        if (btnText2.text == "O" && btnText5.text == "O" && btnText8.text == "O")
+        if (btnText2.text == "O" && btnText5.text == "O" && btnText8.text == "O" && endGame == false)
         {
             btnText2.color = Color.blue;
             btnText5.color = Color.blue;
@@ -167,9 +180,10 @@ public class TicTacToeCoding : MonoBehaviour
             feedback.text = "Player O won!";
             plusOne = int.Parse(txtO.text);
             txtO.text = Convert.ToString(plusOne + 1);
+            endGame = true;
         }
         else
-        if (btnText7.text == "O" && btnText8.text == "O" && btnText9.text == "O")
+        if (btnText7.text == "O" && btnText8.text == "O" && btnText9.text == "O" && endGame == false)
         {
             btnText7.color = Color.blue;
             btnText8.color = Color.blue;
@@ -177,9 +191,10 @@ public class TicTacToeCoding : MonoBehaviour
             feedback.text = "Player O won!";
             plusOne = int.Parse(txtO.text);
             txtO.text = Convert.ToString(plusOne + 1);
+            endGame = true;
         }
         else
-        if (btnText3.text == "O" && btnText6.text == "O" && btnText9.text == "O")
+        if (btnText3.text == "O" && btnText6.text == "O" && btnText9.text == "O" && endGame == false)
         {
             btnText3.color = Color.blue;
             btnText6.color = Color.blue;
@@ -187,9 +202,10 @@ public class TicTacToeCoding : MonoBehaviour
             feedback.text = "Player O won!";
             plusOne = int.Parse(txtO.text);
             txtO.text = Convert.ToString(plusOne + 1);
+            endGame = true;
         }
         else
-        if (btnText4.text == "O" && btnText5.text == "O" && btnText6.text == "O")
+        if (btnText4.text == "O" && btnText5.text == "O" && btnText6.text == "O" && endGame == false)
         {
             btnText4.color = Color.blue;
             btnText5.color = Color.blue;
@@ -197,24 +213,26 @@ public class TicTacToeCoding : MonoBehaviour
             feedback.text = "Player O won!";
             plusOne = int.Parse(txtO.text);
             txtO.text = Convert.ToString(plusOne + 1);
+            endGame = true;
         }
         else
         if (btn1Checked == true && btn2Checked == true && btn3Checked == true && btn4Checked == true && btn5Checked == true && btn6Checked == true && btn7Checked == true && btn8Checked == true && btn9Checked == true) 
         {
             feedback.text = "A draw! Reset the game.";
+            endGame = true;
         }
     }
 
     public void btnText1Click() 
     {
-        if (checker == false && btn1Checked == false) 
+        if (checker == false && btn1Checked == false && endGame == false) 
         {
             btnText1.text = "X";
             checker = true;
             btn1Checked = true;
         }
         else
-        if (btn1Checked == false)
+        if (btn1Checked == false && endGame == false)
         {
             btnText1.text = "O";
             checker = false;
@@ -225,14 +243,14 @@ public class TicTacToeCoding : MonoBehaviour
 
     public void btnText2Click() 
     {
-        if (checker == false && btn2Checked == false) 
+        if (checker == false && btn2Checked == false && endGame == false) 
         {
             btnText2.text = "X";
             checker = true;
             btn2Checked = true;
         }
         else 
-        if (btn2Checked == false)
+        if (btn2Checked == false && endGame == false)
         {
             btnText2.text = "O";
             checker = false;
@@ -243,14 +261,14 @@ public class TicTacToeCoding : MonoBehaviour
 
     public void btnText3Click() 
     {
-        if (checker == false && btn3Checked == false) 
+        if (checker == false && btn3Checked == false && endGame == false) 
         {
             btnText3.text = "X";
             checker = true;
             btn3Checked = true;
         }
         else 
-        if (btn3Checked == false)
+        if (btn3Checked == false && endGame == false)
         {
             btnText3.text = "O";
             checker = false;
@@ -261,14 +279,14 @@ public class TicTacToeCoding : MonoBehaviour
 
     public void btnText4Click() 
     {
-        if (checker == false && btn4Checked == false) 
+        if (checker == false && btn4Checked == false && endGame == false) 
         {
             btnText4.text = "X";
             checker = true;
             btn4Checked = true;
         }
         else 
-        if (btn4Checked == false)
+        if (btn4Checked == false && endGame == false)
         {
             btnText4.text = "O";
             checker = false;
@@ -279,14 +297,14 @@ public class TicTacToeCoding : MonoBehaviour
 
     public void btnText5Click() 
     {
-        if (checker == false && btn5Checked == false) 
+        if (checker == false && btn5Checked == false && endGame == false) 
         {
             btnText5.text = "X";
             checker = true;
             btn5Checked = true;
         }
         else 
-        if (btn5Checked == false)
+        if (btn5Checked == false && endGame == false)
         {
             btnText5.text = "O";
             checker = false;
@@ -297,14 +315,14 @@ public class TicTacToeCoding : MonoBehaviour
 
     public void btnText6Click() 
     {
-        if (checker == false && btn6Checked == false) 
+        if (checker == false && btn6Checked == false && endGame == false) 
         {
             btnText6.text = "X";
             checker = true;
             btn6Checked = true;
         }
         else 
-        if (btn6Checked == false)
+        if (btn6Checked == false && endGame == false)
         {
             btnText6.text = "O";
             checker = false;
@@ -315,14 +333,14 @@ public class TicTacToeCoding : MonoBehaviour
 
     public void btnText7Click() 
     {
-        if (checker == false && btn7Checked == false) 
+        if (checker == false && btn7Checked == false && endGame == false) 
         {
             btnText7.text = "X";
             checker = true;
             btn7Checked = true;
         }
         else 
-        if (btn7Checked == false)
+        if (btn7Checked == false && endGame == false)
         {
             btnText7.text = "O";
             checker = false;
@@ -333,14 +351,14 @@ public class TicTacToeCoding : MonoBehaviour
 
     public void btnText8Click() 
     {
-        if (checker == false && btn8Checked == false) 
+        if (checker == false && btn8Checked == false && endGame == false) 
         {
             btnText8.text = "X";
             checker = true;
             btn8Checked = true;
         }
         else 
-        if (btn8Checked == false)
+        if (btn8Checked == false && endGame == false)
         {
             btnText8.text = "O";
             checker = false;
@@ -351,14 +369,14 @@ public class TicTacToeCoding : MonoBehaviour
 
     public void btnText9Click() 
     {
-        if (checker == false && btn9Checked == false) 
+        if (checker == false && btn9Checked == false && endGame == false) 
         {
             btnText9.text = "X";
             checker = true;
             btn9Checked = true;
         }
         else 
-        if (btn9Checked == false)
+        if (btn9Checked == false && endGame == false)
         {
             btnText9.text = "O";
             checker = false;
@@ -401,6 +419,7 @@ public class TicTacToeCoding : MonoBehaviour
 
         feedback.text = "";
         checker = false;
+        endGame = false;
     }
 
     public void btnNewClick()
